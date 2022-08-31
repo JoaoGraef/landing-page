@@ -1,0 +1,160 @@
+/* *usado para toda a página, deixando as margens zeradas */
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body{
+    background-color: rgb(62, 216, 16);
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, green, #fff, red);
+}
+
+/* Estilizar as listas ul e li */
+.menu ul{
+    list-style: none; /*remove detales das listas*/
+    position: relative;
+}
+
+/* Estilizar as listas para ficarem uma ao lado da outra*/
+.menu li{
+    width: 150px;
+    float: right;
+}
+
+.menu a{
+    padding: 30px;
+    display: block; /*deixar os elementos um embaixo do outro*/
+    text-decoration: none; /*tira o sublinhado ou qualquer outro style*/
+    text-align: center; /*alinhamento do texto*/
+    color: rgb(0, 0, 0); /*cor da fonte*/
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden; /*esconder as informações*/
+}
+
+.menu ul li:hover ul{
+    visibility: visible; /*aparece os itens novamente*/
+}
+.sub_menu li a{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menu ul img{
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: 2px solid #ccc; /*mostra uma borda/linha a baixo*/
+}
+
+.chamado{
+    width: 40%;
+    height: 500px;
+    float: left;
+    background-color: #f1f2f3;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.chamado h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px #6b8107;
+}
+
+.chamado h4{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 5px #074a81;
+}
+
+.chamado h5{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px #d11010;
+}
+
+div{
+    border: 2px solid;
+    height: 120px;
+    padding-top: 15px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+.imagens{
+    width: 60%;
+    height: 500px;
+    float: left;
+    list-style: none;
+}
+
+.lasanha{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.vinho{
+    position: absolute;
+    top: 250px;
+    left: 480px;
+    width:30%;
+    rotate: -10deg;
+}
+
+.forms{
+    width: 40%;
+    height: 333px;
+    float: left;
+    background-color: #fff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px #eb1616;
+}
+
+input{
+    margin-top: 5px;
+    width: 95%;
+    height: 35px;
+    font-size: 16px;
+    box-shadow: inset 0 0 2px 2px rgb(168, 120, 120);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none; /*Não deixa marcado*/
+    background-color: white;
+}
+
+iframe{
+    width: 60%;
+    height: 333px;
+}
